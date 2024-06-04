@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "llm-with-docker"
+version = "0.1.0"
+description = ""
+authors = ["nichnikov <a.nichnikov@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+vllm = "^0.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
