@@ -11,9 +11,7 @@ COPY . /app
 # RUN apt-get update && apt-get install -y build-essential libpoppler-cpp-dev pkg-config python-dev
 
 # install dependencies
-RUN apt-get update && apt-get install -y wget unzip python3-dev
-RUN pip install --upgrade pip && pip install --no-cache-dir poetry==1.5
-RUN poetry install --no-root
+RUN apt-get update && apt-get install -y wget unzip python3-dev && pip install --upgrade pip && pip install --no-cache-dir poetry==1.5 && poetry install --no-root
 
 
 # run the command
